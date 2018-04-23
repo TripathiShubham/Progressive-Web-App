@@ -3,9 +3,7 @@ var cacheName = 'iot-v1';
 var list = [
   '/'
 ];
-/**
- * SW install event
- */
+
 self.addEventListener('install', function (e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
@@ -16,9 +14,6 @@ self.addEventListener('install', function (e) {
   );
 });
 
-/**
- * SW activate event
- */
 self.addEventListener('activate', function (e) {
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
@@ -33,11 +28,7 @@ self.addEventListener('activate', function (e) {
   );
 });
 
-/**
- * SW fetch event
- */
 self.addEventListener('fetch', function(event) {
-  console.log(event);
   event.respondWith(
     caches.open(dataCacheName).then(function(cache) {
       return cache.match(event.request).then(function(response) {
@@ -49,18 +40,4 @@ self.addEventListener('fetch', function(event) {
       })
     })
   );
-});
-
-/**
- * SW push event
- */
-self.addEventListener('push', function(event) {
-  const title = 'Hey geek';
-  const options = {
-    body: event.data.text(),
-    icon: '/assets/img/iot.png',
-    badge: '/assets/img/iot.png',
-    vibrate: [100, 50, 100]
-  };
-  event.waitUntil(self.registration.showNotification(title, options));
 });

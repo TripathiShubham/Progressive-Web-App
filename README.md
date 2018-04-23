@@ -1,1 +1,2 @@
-Atmecs IOT pwa app with push notification.
+Atmecs IOT App
+https://iot-atmecs.herokuapp.com
