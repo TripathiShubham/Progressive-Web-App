@@ -1,0 +1,35 @@
+<div>
+    <div class="white-divider"></div>
+    <ul class="mdl-list__item zero-padding zero-margin full-width app-list">
+        <li *ngFor="let item of listItem"
+            class="mdl-list__item mdl-list__item--three-line md-li swipe-box">
+            <!-- 
+                (swipeleft)="swipe(item.id, $event.type)"
+                (swiperight)="swipe(item.id, $event.type)"
+            -->
+            <span class="mdl-list__item-primary-content">
+                    <span class="mdl-list__item-avatar">
+                        <img src="{{item.img}}" style="max-height:40px"/>
+                    </span>
+            <span>{{item.name}}</span>
+            <span class="mdl-list__item-text-body">
+                        Emp Id - {{item.id}} <br/>
+                        Atmecs Technologies
+                    </span>
+            </span>
+        </li>
+    </ul>
+
+    <button class="mdl-button mdl-js-button mdl-button--fab add-employee mdl-button--colored"
+        routerLink="/add">
+        <i class="material-icons">add</i>
+    </button>
+</div>
+
+<dialog class="mdl-dialog">
+    <p class="mdl-dialog__title"><strong>Delete User?</strong></p>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Yes</button>
+      <button type="button" class="mdl-button close">No</button>
+    </div>
+  </dialog>

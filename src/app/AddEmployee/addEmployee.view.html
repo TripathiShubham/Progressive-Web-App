@@ -1,0 +1,29 @@
+<div class="white-divider"></div>
+<div class="container">
+    <div class="container row">
+        <h4>Add Employee</h4>
+    </div>
+    <form>
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="username" />
+            <label class="mdl-textfield__label" for="username">Name</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="number" id="userid" />
+            <label class="mdl-textfield__label" for="userid">Emp ID</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+            <input class="mdl-textfield__input" placeholder="Choose file" type="text" id="uploadFile" readonly/>
+            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+                <i class="material-icons">attach_file</i>
+                <input type="file" id="uploadBtn">
+            </div>
+        </div>
+        <div class="mdl-card__actions mdl-card--border no-border">
+            <button class="mdl-button mdl-js-button mdl-button--raised 
+                pull-right mdl-js-ripple-effect mdl-button--accent">Add</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised 
+                mdl-js-ripple-effect mdl-button--accent" (click)="goBack()">Cancel</button>
+        </div>
+    </form>
+</div>

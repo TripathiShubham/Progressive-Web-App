@@ -1,0 +1,185 @@
+html
+{
+    height:100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 70px
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.zero-padding {
+    padding: 0px !important;
+}
+
+
+.hand-pointer{
+    cursor: pointer;
+}
+
+
+.dropdown-menu {
+    background-color: #455a64 !important;
+}
+
+ul.dropdown-menu a {
+    color: white !important;
+}
+
+ul.dropdown-menu a:hover {
+    color: black !important;
+}
+
+.banner {
+    background: url(/assets/img/banner.webp);
+    min-height: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    color:white;
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 45px;
+    margin-top: 15%;
+}
+
+.profile-banner {
+    color: white;
+    line-height: 24px;
+    font-size: small;
+    display: block;
+}
+
+.md-li {
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.mdl-list__item-avatar {
+    background-color: transparent !important; 
+}
+
+.zero-padding {
+    padding: 0px;
+} 
+.zero-margin {
+    margin: 0px;
+}
+
+.full-width {
+    width: 100% !important;
+    display: inline-block !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.mdl-layout--fixed-header {
+    position: fixed !important;
+}
+
+.add-employee {
+    position: fixed !important;
+    top: 86% !important;
+    right: 30px !important;
+    float: right !important;
+}
+
+.add-emp {
+    align-items: center;
+    justify-content: center;
+}
+
+.add-emp-content {
+	padding: 24px;
+	flex: none;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.mdl-dialog__title {
+    font-size: 1.5rem !important;
+}
+
+.app-list {
+    overflow-y: auto !important;
+}
+
+.mdl-textfield__label{  
+    margin-bottom:0px !important;
+}
+
+.mdl-textfield {
+    width: 100% !important;
+}
+
+.white-divider {
+    min-height: 10px;
+    background-color: #f7f2f2;
+}
+
+.dialog-head-foot {
+    padding: 10px;
+    background-color: #3949a3;
+    text-align: center;
+    font-size: large;
+    color: white;
+ 
+}
+.attendence-dialog-header {
+    margin: 0px 0px 10px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.attendence-dialog-body {
+    min-height: 150px;
+    padding: 10px;
+}
+
+.close-dialog {
+    margin: 0px 0px 0px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mdl-button--file {
+    input {
+      cursor: pointer;
+      height: 100%;
+      right: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 300px;
+      z-index: 4;
+    }
+  }
+  
+  .mdl-textfield--file {
+    .mdl-textfield__input {
+      box-sizing: border-box;
+      width: calc(100% - 32px);
+    }
+    .mdl-button--file {
+      right: 0;
+    }
+  }

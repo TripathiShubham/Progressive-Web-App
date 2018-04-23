@@ -1,0 +1,32 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" #layoutDrawer>
+  <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">App</span>
+          <div class="mdl-layout-spacer"></div>
+      </div>
+  </header>
+  <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title banner">
+          <div class="">
+              <img class="profile-img" src="assets/img/u4.png">
+          </div>
+          <a class="profile-banner">
+              <span class="title">Shubham</span>
+      </a>
+      <a class="profile-banner">
+                  <span class="">shubham.tripathi@gmail.com</span>
+          </a>
+      </span>
+      <nav class="mdl-navigation">
+          <a class="mdl-navigation__link">Profile</a>
+          <a class="mdl-navigation__link" (click)="navdrawer('dashboard')">Employees</a>
+          <a class="mdl-navigation__link" (click)="navdrawer('add')">Add Employee</a>
+          <a class="mdl-navigation__link" (click)="navdrawer('attendence')">Attendence</a>
+      </nav>
+  </div>
+  <main class="mdl-layout__content">
+      <div class="page-content">
+          <router-outlet></router-outlet>
+      </div>
+  </main>
+</div>

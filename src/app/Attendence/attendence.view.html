@@ -1,0 +1,53 @@
+<div class="">
+    <div class="white-divider"></div>
+    <div class="">
+        <ul class="mdl-list__item zero-padding zero-margin full-width app-list">
+            <li *ngFor="let item of listItem let i = index"
+                class="mdl-list__item mdl-list__item--three-line md-li swipe-box">
+                <!-- 
+                    (swipeleft)="swipe(item.id, $event.type)"
+                    (swiperight)="swipe(item.id, $event.type)"
+                -->
+                <span class="mdl-list__item-primary-content">
+                    <span class="mdl-list__item-avatar">
+                        <img [src]="item.img" style="max-height:40px"/>
+                    </span>
+                    <span>{{item.name}}</span>
+                    <span class="mdl-list__item-text-body" 
+                        *ngIf="i != 2 && i != 4 ; else absentTemplate">
+                            In Time - 11:23 AM <br/>
+                            Out Time - 8:20 PM
+                    </span>                           
+                    <ng-template #absentTemplate>
+                            <p style="color:red">Absent!</p>
+                    </ng-template>
+                </span>
+                <span class="pull-right" (click)="openDialog(item.name)">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<dialog class="mdl-dialog" style="padding: 0px;border-radius: 5px;">
+    <div>
+    <div class="dialog-header attendence-dialog-header dialog-head-foot">
+        {{name}}
+    </div>
+    <div class="attendence-dialog-body">
+        <div style="font-size: large;padding: 10px;">
+            Date - 10 Nov 2017
+        </div>
+        <div style="font-size: medium;padding: 10px;">
+            In Time : 11:10 AM
+        </div>
+        <div style="font-size: medium;padding: 10px;">
+            Out Time : 11:10 PM
+        </div>
+        </div>
+    <div class="close-dialog dialog-head-foot">
+    	Close
+    </div>
+</div>
+</dialog>

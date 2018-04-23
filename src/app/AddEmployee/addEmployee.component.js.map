@@ -1,0 +1,1 @@
+{"version":3,"file":"addEmployee.component.js","sourceRoot":"","sources":["addEmployee.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAO1C,IAAa,WAAW;IAAxB;IAKA,CAAC;IAHG,qCAAe,GAAf;QACI,gBAAgB,CAAC,oBAAoB,EAAE,CAAC;IAC1C,CAAC;IACP,kBAAC;AAAD,CAAC,AALD,IAKC;AALY,WAAW;IAHvB,gBAAS,CAAC;QACP,WAAW,EAAE,yBAAyB;KACzC,CAAC;GACW,WAAW,CAKvB;AALY,kCAAW"}
